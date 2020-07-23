@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 02463d6d9eb4ded7f97f48acbc70b00d37ba4d1718e007b0cb30519e5dc46ec2
+  sha256: 7ddebde0433dcbb098798acdbf9e58da9a6576b1da41a0798894afc12dd9ba05
 
 build:
   noarch: python
@@ -22,7 +22,6 @@ requirements:
   run:
     - python >=3.6
     - setuptools
-    - pygeoogc
     - geopandas
     - rasterio
     - shapely
@@ -38,10 +37,10 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A part of Hydrodata software stack for handling geospatial data manipulations '
+  summary: 'A part of Hydrodata software stack for handling geospatial data manipulations.'
 
   description: |
-      pygeoutils is a part of the Hydrodata suite that handles manipulation of
+      PyGeoUtils is a part of the Hydrodata suite that handles manipulation of
       (Geo)JSON and GeoTIFF objects and converting them to dataframes.
   doc_url: https://hydrodata.readthedocs.io
   dev_url: https://github.com/cheginit/pygeoutils
