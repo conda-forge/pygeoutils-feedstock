@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7ddebde0433dcbb098798acdbf9e58da9a6576b1da41a0798894afc12dd9ba05
+  sha256: 34fe47c53adf4357d0b423e0038c4ecf27ed0c024cffe72644bfe6a12af9360f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A part of Hydrodata software stack for handling geospatial data manipulations.'
+  summary: A part of Hydrodata software stack for handling geospatial data manipulations.
 
   description: |
       PyGeoUtils is a part of the Hydrodata suite that handles manipulation of
