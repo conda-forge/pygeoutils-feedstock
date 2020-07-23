@@ -40,8 +40,8 @@ about:
   summary: A part of Hydrodata software stack for handling geospatial data manipulations.
 
   description: |
-      PyGeoUtils is a part of the Hydrodata suite that handles manipulation of
-      (Geo)JSON and GeoTIFF objects and converting them to dataframes.
+    PyGeoUtils is a part of the Hydrodata suite that handles manipulation of
+    (Geo)JSON and GeoTIFF objects and converting them to dataframes.
   doc_url: https://hydrodata.readthedocs.io
   dev_url: https://github.com/cheginit/pygeoutils
 
