@@ -7,9 +7,9 @@ Package license: MIT
 
 Feedstock license: BSD-3-Clause
 
-Summary: A part of Hydrodata software stack for handling geospatial data manipulations 
+Summary: A part of Hydrodata software stack for handling geospatial data manipulations.
 
-pygeoutils is a part of the Hydrodata suite that handles manipulation of
+PyGeoUtils is a part of the Hydrodata suite that handles manipulation of
 (Geo)JSON and GeoTIFF objects and converting them to dataframes.
 
 
