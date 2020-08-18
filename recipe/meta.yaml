@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b38fca1dbbeab3b5b6eb0b647ef60fc7990b6b191d63fb2053e734c62f9db208
+  sha256: 2447e531e5cd416824894c78f2becd3ed0a85fcef1231813de4f34ce596e1f68
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - shapely
     - xarray
     - netCDF4
-    - simplejson
+    - orjson
 
 test:
   imports:
