@@ -5,9 +5,13 @@ Home: https://github.com/cheginit/pygeoutils
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoutils-feedstock/blob/master/LICENSE.txt)
 
 Summary: A part of Hydrodata software stack for handling geospatial data manipulations.
+
+Development: https://github.com/cheginit/pygeoutils
+
+Documentation: https://hydrodata.readthedocs.io
 
 PyGeoUtils is a part of the Hydrodata suite that handles manipulation of
 (Geo)JSON and GeoTIFF objects and converting them to dataframes.
