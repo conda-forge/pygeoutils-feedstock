@@ -1,50 +1,60 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fcd3cd1f57d853258099835dcf4149302fae33ae00c5fcd077c86b1342ba9de2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoutils-{{ version }}.tar.gz
+  sha256: 9a6fef35a9d5254be1fc6115438e828fc5475bdc4bc7b9ca2da86dc854c95a5a
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
     - pip
-    - setuptools_scm
-  run:
     - python >=3.6
-    - setuptools
+    - setuptools-scm
+  run:
+    - aiodns
+    - aiohttp
+    - brotlipy
+    - chardet
+    - cytoolz
+    - defusedxml
     - geopandas
-    - rasterio
-    - shapely
-    - xarray
-    - netCDF4
+    - nest-asyncio
+    - netcdf4
     - orjson
+    - owslib
+    - pygeoogc
+    - pyproj
+    - python >=3.6
+    - rasterio
+    - requests
+    - setuptools
+    - shapely
+    - simplejson
+    - xarray
 
 test:
   imports:
     - pygeoutils
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/cheginit/pygeoutils
+  summary: A set of utilities for manipulating (Geo)JSON and (Geo)TIFF data.
   license: MIT
-  license_family: MIT
   license_file: LICENSE
-  summary: A part of Hydrodata software stack for handling geospatial data manipulations.
-
-  description: |
-    PyGeoUtils is a part of the Hydrodata suite that handles manipulation of
-    (Geo)JSON and GeoTIFF objects and converting them to dataframes.
-  doc_url: https://hydrodata.readthedocs.io
-  dev_url: https://github.com/cheginit/pygeoutils
 
 extra:
   recipe-maintainers:
