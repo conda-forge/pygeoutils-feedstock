@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoutils-{{ version }}.tar.gz
-  sha256: 7bfa647ad299a55b7995bf852a841a9942f2dd7603020153c077897b12f2a8ab
+  sha256: 1dafcb5fb8f162d510e92537a7052558316e515ec18a4d7543fb35ad689b0af4
 
 build:
   number: 0
@@ -18,28 +18,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools-scm
   run:
-    - aiodns
-    - aiohttp
-    - brotlipy
-    - chardet
-    - cytoolz
-    - defusedxml
+    - affine
+    - dask-core
     - geopandas
-    - nest-asyncio
     - netcdf4
+    - numpy
     - orjson
-    - owslib
-    - pygeoogc
     - pyproj
-    - python >=3.6
+    - python >=3.7
     - rasterio
-    - requests
-    - setuptools
     - shapely
-    - simplejson
     - xarray
 
 test:
