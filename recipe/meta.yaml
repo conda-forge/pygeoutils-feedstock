@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.11.1" %}
+{% set version = "0.11.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoutils-{{ version }}.tar.gz
-  sha256: f22eb16c4a3591ff5ed361e0ac9116d982ef4489a0815a39d7800552df76cf97
+  sha256: 411e084d967bab037f6b8770ae1022f3eea058871221d7fa6833876b3e02f0cb
 
 build:
   number: 0
@@ -23,15 +23,15 @@ requirements:
   run:
     - affine
     - dask-core
-    - geopandas
+    - geopandas >=0.7
     - netcdf4
-    - numpy
+    - numpy >=1.17
     - orjson
-    - pyproj
+    - pyproj >=2.2
     - python >=3.7
     - rasterio
-    - shapely
-    - xarray
+    - shapely >=1.6
+    - xarray >=0.17
 
 test:
   imports:
