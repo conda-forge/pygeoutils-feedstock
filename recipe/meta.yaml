@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.11.4" %}
+{% set version = "0.11.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoutils-{{ version }}.tar.gz
-  sha256: 6eaa200311d7f660af4b356fbb2035cbe20e99718edac6669805bb017aeb38dd
+  sha256: 8a5fbbd6ab2696f0db69942154f4e5158f0c4717dd9081b9544e7eb82a7d13af
 
 build:
   number: 0
@@ -21,7 +21,6 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - affine
     - dask-core
     - geopandas >=0.7
     - netcdf4
