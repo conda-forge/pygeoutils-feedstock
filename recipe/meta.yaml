@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.11.5" %}
+{% set version = "0.11.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoutils-{{ version }}.tar.gz
-  sha256: 8a5fbbd6ab2696f0db69942154f4e5158f0c4717dd9081b9544e7eb82a7d13af
+  sha256: 05efe36031009737bc50a41d6c43246439b05cbdafb1d123b4182014c8dbf380
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - numpy >=1.17
     - pyproj >=2.2
     - python >=3.7
-    - rasterio
+    - rasterio >=1.2
     - shapely >=1.6
     - ujson
     - xarray >=0.17
