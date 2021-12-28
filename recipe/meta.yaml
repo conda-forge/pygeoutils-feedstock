@@ -11,7 +11,7 @@ source:
   sha256: 3b20d0e2b15dd254f142541185afbd7388d97deeea4d1c3a2b1d297d3fb49094
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,6 +32,7 @@ requirements:
     - shapely >=1.6
     - ujson
     - xarray >=0.18
+    - importlib_metadata
 
 test:
   imports:
