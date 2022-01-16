@@ -25,6 +25,7 @@ requirements:
     - geopandas >=0.7
     - netcdf4
     - numpy >=1.17
+    - pygeos
     - pyproj >=2.2
     - python >=3.7
     - rasterio >=1.2
