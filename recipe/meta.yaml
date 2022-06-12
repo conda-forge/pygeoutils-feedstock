@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoutils-{{ version }}.tar.gz
-  sha256: d52a2176107fcdb9f4cef773e998c810a3bd6e823677744ff724b7236c6f8844
+  sha256: 97cc35619944b0a93f08655c66fdd9236b379a4abe794188b9c0e03c578b3c34
 
 build:
   number: 0
