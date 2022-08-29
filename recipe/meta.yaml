@@ -1,6 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.13.2" %}
-
+{% set version = "0.13.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,33 +7,33 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoutils-{{ version }}.tar.gz
-  sha256: 2c42bd3d7d8cd39ce9197e3a54b24bffafc15b5e9f0192e8dc564fe2c63d6337
+  sha256: 3e50f282901d387b82ecb33f778cd603f7d0e92899ae3f400886f5d44398a36d
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - pip
     - python >=3.8
+    - pip
     - setuptools-scm
   run:
-    - cytoolz
-    - dask-core
-    - geopandas >=0.8
-    - netcdf4
-    - numpy >=1.17
-    - pygeos
-    - pyproj >=2.2
     - python >=3.8
-    - rasterio >=1.2
-    - rioxarray >=0.10
+    - cytoolz
+    - geopandas >=0.8
     - scipy
-    - shapely >=1.7
+    - xarray >=2022.03.0
+    - pygeos
+    - rasterio >=1.2
+    - dask-core
+    - netcdf4
+    - shapely >=1.8
     - ujson
-    - xarray >=0.18
+    - pyproj >=2.2
+    - numpy >=1.17
+    - rioxarray >=0.11
 
 test:
   imports:
@@ -45,10 +44,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/cheginit/pygeoutils
-  summary: A set of utilities for manipulating (Geo)JSON and (Geo)TIFF data.
+  home: https://github.com/hyriver/pygeoutils
+  summary: Utilities for manipulating geospatial, (Geo)JSON, and (Geo)TIFF data.
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
 
 extra:
   recipe-maintainers:
