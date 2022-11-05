@@ -21,19 +21,19 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.8
-    - cytoolz
-    - geopandas >=0.8
-    - scipy
-    - xarray >=2022.03.0
-    - pygeos
-    - rasterio >=1.2
     - dask-core
+    - geopandas>=0.7
+    - loguru
     - netcdf4
-    - shapely >=1.8
+    - numpy>=1.17
+    - pygeos
+    - pyproj>=2.2
+    - rasterio>=1.2
+    - rioxarray>=0.11
+    - scipy
+    - shapely>=1.8
     - ujson
-    - pyproj >=2.2
-    - numpy >=1.17
-    - rioxarray >=0.11
+    - xarray>=2022.03.0
 
 test:
   imports:
