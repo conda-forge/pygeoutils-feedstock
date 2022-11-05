@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.8
+    - cytoolz
     - dask-core
     - geopandas >=0.7
     - loguru
