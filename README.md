@@ -1,11 +1,11 @@
-About pygeoutils
-================
+About pygeoutils-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoutils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hyriver/pygeoutils
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoutils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utilities for manipulating geospatial, (Geo)JSON, and (Geo)TIFF data.
 
