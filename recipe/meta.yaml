@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 223941267e0519f258c299000f428cf37058a0d9f5e2ea157a867d6347eb11b9
+  sha256: 4425981fc41f5d04c0ba447956afaea8fc04511dacb0b2106aca8e428cf94527
 
 build:
   noarch: python
@@ -23,8 +23,8 @@ requirements:
   run:
     - python >=3.8
     - cytoolz
-    - dask-core
-    - geopandas >=0.10
+    - geopandas-base >=0.10
+    - foina
     - netcdf4
     - numpy >=1.21
     - pyproj >=2.2
@@ -33,7 +33,7 @@ requirements:
     - scipy
     - shapely >=1.8.5
     - ujson
-    - xarray >=2022.03.0
+    - xarray >=2023.01.0
 
 test:
   imports:
