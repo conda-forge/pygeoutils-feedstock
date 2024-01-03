@@ -31,7 +31,7 @@ requirements:
     - rasterio >=1.2
     - rioxarray >=0.11
     - scipy
-    - shapely >=1.8.5
+    - shapely >=2
     - ujson
     - xarray >=2023.01.0
 
