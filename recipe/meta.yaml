@@ -1,5 +1,5 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 02d27001c3edb5a855391cc9fc8f9abd8f32a756384d5d65f10b8b6c667d4dff
+  sha256: 7cc4872ddce725911e4fe9ebc88d8736a183b057bfaee995beea50e38853b29c
 
 build:
   noarch: python
@@ -23,10 +23,10 @@ requirements:
   run:
     - python >=3.9
     - cytoolz
-    - geopandas-base >=0.10
+    - geopandas-base >=1
     - pyogrio
     - netcdf4
-    - numpy >=1.21
+    - numpy >=2
     - pyproj >=2.2
     - rasterio >=1.2
     - rioxarray >=0.11
