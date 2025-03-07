@@ -1,13 +1,13 @@
 {% set name = "pygeoutils" %}
-{% set version = "0.19.0" %}
+{% set version = "0.19.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ba983487539176da319a3372757f558d174b19305fa14426ed4252bbe35e987
+  url: https://files.pythonhosted.org/packages/30/c4/d6e363ccfcf198d5eb250b414e14a81a163eb6976c1bf0a29f88a0a596a2/pygeoutils-{{ version }}.tar.gz
+  sha256: 1dd29325607ce7546672b74b17effcc66a94f8036074558310574976c4e5d751
 
 build:
   noarch: python
@@ -32,7 +32,6 @@ requirements:
     - rioxarray >=0.11
     - scipy
     - shapely >=2
-    - ujson
     - xarray >=2023.01.0
 
 test:
